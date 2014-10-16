@@ -1,0 +1,68 @@
+Delivered-To: r.m.foucault@gmail.com
+Received: by 10.25.83.65 with SMTP id h62csp403294lfb;
+        Tue, 14 Oct 2014 08:50:32 -0700 (PDT)
+X-Received: by 10.194.71.83 with SMTP id s19mr6108386wju.29.1413301832305;
+        Tue, 14 Oct 2014 08:50:32 -0700 (PDT)
+Return-Path: <romain.foucault@cozycloud.cc>
+Received: from mail-wg0-f43.google.com (mail-wg0-f43.google.com [74.125.82.43])
+        by mx.google.com with ESMTPS id pz9si21761336wjc.69.2014.10.14.08.50.31
+        for <r.m.foucault@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Tue, 14 Oct 2014 08:50:31 -0700 (PDT)
+Received-SPF: softfail (google.com: domain of transitioning romain.foucault@cozycloud.cc does not designate 74.125.82.43 as permitted sender) client-ip=74.125.82.43;
+Authentication-Results: mx.google.com;
+       spf=softfail (google.com: domain of transitioning romain.foucault@cozycloud.cc does not designate 74.125.82.43 as permitted sender) smtp.mail=romain.foucault@cozycloud.cc
+Received: by mail-wg0-f43.google.com with SMTP id m15so11071384wgh.2
+        for <r.m.foucault@gmail.com>; Tue, 14 Oct 2014 08:50:31 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to:content-type;
+        bh=QkmHzmF7IK7W8QqBNdn2SxExeMfvuG4s6kAiihRmGas=;
+        b=aB8LsXa0k2tq6MWrsz+OBMduJim3iuTOCk4SEdJCv/cwUDQjmzgwgMQ13vmOz+5NO8
+         D4hv+r9YpkJ7st7I/NFYlVuwbw7OSgA1WqTOKuA5xhuhpv9aRty/UGNslDUUMEIam3CE
+         qe6mMzCpSbp5dtoss7LL4q9Jmzh5eQJ06svAYPAUswqQKaWFjuJdQEbNCSDPfSsUJh3I
+         Lyz+eFkk/CIisi+0BVmIdieny6ZDTu0MAKKz/y7HxNcU6JMy/TO9edWmb/hrXMo1x014
+         swEmKp7GUvm6rtZzn9NfePOHAyBosDuv6PA6aYtljFVPfAQvq5Q3FXrE0k1AFAa6IbGf
+         1jiQ==
+X-Gm-Message-State: ALoCoQmE8wgpCkQ6NvwVvdcS2N0hxPxvwRt1jWfIIaZ/gLPx/nidldBTwsFrpx61oCcXm3rQ9HPj
+X-Received: by 10.194.239.164 with SMTP id vt4mr3108761wjc.131.1413301831072;
+ Tue, 14 Oct 2014 08:50:31 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.216.50.137 with HTTP; Tue, 14 Oct 2014 08:50:10 -0700 (PDT)
+X-Originating-IP: [92.128.55.186]
+In-Reply-To: <CANuBOgmnRvcBnGQ=X1eTuY6XBx2eAHH6mXZDF8q6akYMCkQh5Q@mail.gmail.com>
+References: <CANuBOgmnRvcBnGQ=X1eTuY6XBx2eAHH6mXZDF8q6akYMCkQh5Q@mail.gmail.com>
+From: Romain Foucault <romain.foucault@cozycloud.cc>
+Date: Tue, 14 Oct 2014 17:50:10 +0200
+Message-ID: <CANQi6rjiKqWbcUT7aJNswobga255pO__Y-Ug4W98mH9zO=uO-Q@mail.gmail.com>
+Subject: Re: This is the first Message for a conversation
+To: Romain Massino Foucault <r.m.foucault@gmail.com>
+Content-Type: multipart/alternative; boundary=089e0149398c9a319d050563f94f
+
+--089e0149398c9a319d050563f94f
+Content-Type: text/plain; charset=UTF-8
+
+Awesome, I will quote some of your message in my reply
+
+2014-10-14 17:49 GMT+02:00 Romain Massino Foucault <r.m.foucault@gmail.com>:
+
+> Look, it even has an attachment
+>
+
+And write below it, because i am crazy like that
+
+--089e0149398c9a319d050563f94f
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Awesome, I will quote some of your message in my reply<div=
+ class=3D"gmail_extra"><br><div class=3D"gmail_quote">2014-10-14 17:49 GMT+=
+02:00 Romain Massino Foucault <span dir=3D"ltr">&lt;<a href=3D"mailto:r.m.f=
+oucault@gmail.com" target=3D"_blank">r.m.foucault@gmail.com</a>&gt;</span>:=
+<br><blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-lef=
+t:1px #ccc solid;padding-left:1ex"><div dir=3D"ltr">Look, it even has an at=
+tachment</div></blockquote><div><br></div><div>And write below it, because =
+i am crazy like that=C2=A0</div></div><br></div></div>
+
+--089e0149398c9a319d050563f94f--

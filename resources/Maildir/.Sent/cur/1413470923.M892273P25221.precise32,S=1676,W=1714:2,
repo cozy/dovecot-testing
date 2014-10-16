@@ -1,0 +1,39 @@
+MIME-Version: 1.0
+Received: by 10.25.83.65 with HTTP; Tue, 14 Oct 2014 08:56:51 -0700 (PDT)
+Date: Tue, 14 Oct 2014 17:56:51 +0200
+Delivered-To: r.m.foucault@gmail.com
+Message-ID: <CANuBOgmJ23+pOD+gUcfttrDZ1u73LXtEhLmEVw3vuyUKGCb_7Q@mail.gmail.com>
+Subject: First message of conversation
+From: Romain Massino Foucault <r.m.foucault@gmail.com>
+To: Romain Foucault <romain.foucault@cozycloud.cc>
+Content-Type: multipart/mixed; boundary=089e011829184d64fc0505641025
+
+--089e011829184d64fc0505641025
+Content-Type: multipart/alternative; boundary=089e011829184d64e30505641023
+
+--089e011829184d64e30505641023
+Content-Type: text/plain; charset=UTF-8
+
+Hey look, a cool icon for the app
+
+--089e011829184d64e30505641023
+Content-Type: text/html; charset=UTF-8
+
+<div dir="ltr">Hey look, a cool icon for the app</div>
+
+--089e011829184d64e30505641023--
+--089e011829184d64fc0505641025
+Content-Type: image/png; name="1401806062_server.png"
+Content-Disposition: attachment; filename="1401806062_server.png"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: f_i19fmdwc0
+
+iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABmJLR0QA/wD/AP+gvaeTAAABa0lE
+QVR4nO3cUQqCQBRA0Sna/5ZrBZrQTJn3nG9JqcsDTd4YAAAAQMXtwDHP5VfBSru/8f1bV8E5CSBO
+AHECiBNAnADiBBAngDgBxAkgTgBxAogTQJwA4gQQ95jwGUfeKdjjfYMfMgHiBBAngDgBxAkgTgBx
+Aoib8RzAffwfMwHiBBAngDgBxAkgTgBxAoj79L/8Md4/B5hxjrKl368JECeAOAHECSBOAHECiBNA
+nD2B12dPINsEECeAOAHECSBOAHECiBNAnADiBBAngDgBxAkgTgBxAoizJzDOBIgTQJwA4gQQJ4A4
+AcQJIM6ewDgTIE4AcQKIE0CcAOIEECeAOHsCz8+eQNYRQJwA4gQQJ4A4AcQJIM6ewOuzJ5BtAogT
+QJwA4gQQJ4A4AcQJIE4AcQKIE0CcAOIEECeAOAHE2RMYZwLECSBOAHECiBNAnADiBBBnT2CcCRAn
+gDgBxAkgTgBxAogTAAAAAEDEC7YsDeXXgupQAAAAAElFTkSuQmCC
+--089e011829184d64fc0505641025--
