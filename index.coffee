@@ -2,6 +2,8 @@
 `#!/usr/bin/env node`
 
 {exec} = require 'child_process'
+{Socket} = require 'net'
+tls = require 'tls'
 
 module.exports = DovecotTesting = {}
 
@@ -10,6 +12,31 @@ run = (cmd, callback) ->
         console.log stdout
         console.log stderr if err
         callback err
+
+waitDovecotUp = (callback, i = 0) ->
+
+    # timeout at 10 attempts
+    return callback new Error('dovecot is broken') if i is 20
+    if i is 0 then process.stdout.write 'Waiting for dovecot to start'
+    else process.stdout.write '.'
+
+    socket = new Socket()
+    socket.on 'data', -> #drop it
+    socket.once 'connect', ->
+        process.stdout.write "\n"
+        console.log "Dovecot took #{i}s to start"
+        socket.destroy()
+        callback null
+
+    socket.once 'error', (err) ->
+        return callback err if err.code isnt 'ECONNREFUSED'
+        # dovecot not started yet
+        try socket.destroy()
+        setTimeout ->
+            waitDovecotUp callback, i + 1
+        , 1000
+
+    socket.connect 993, DovecotTesting.serverIP()
 
 if process.env.INVAGRANT? then RUN_IN_VAGRANT = process.env.INVAGRANT
 else RUN_IN_VAGRANT = not process.env.TRAVIS and process.env.USER isnt 'vagrant'
@@ -39,7 +66,7 @@ DovecotTesting.changeSentUIDValidity = (done) ->
             return done new Error('failed to change UID')
 
         # let dovecot time to start
-        setTimeout ( -> done null ), 3000
+        waitDovecotUp done
 
 DovecotTesting.setupEnvironment = (done) ->
     @timeout? 300000
@@ -55,7 +82,7 @@ DovecotTesting.setupEnvironment = (done) ->
                     return done new Error('failed to start Dovecot')
 
                 # let dovecot time to start
-                setTimeout ( -> done null ), 1000
+                waitDovecotUp done
 
     else
         console.log 'Starting Local Provisioning'
@@ -69,9 +96,10 @@ DovecotTesting.setupEnvironment = (done) ->
                 return done new Error('failed to start Dovecot')
 
             # let dovecot time to start
-            setTimeout ( -> done null ), 1000
+            waitDovecotUp done
 
 DovecotTesting.forcedCleanState = (done) ->
+    @timeout? 30000
     cmd = """
         sudo rm -rf /resources/ &&
         sudo rm -rf /home/testuser/Maildir/
