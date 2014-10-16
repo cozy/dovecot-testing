@@ -1,0 +1,22 @@
+{
+  "name": "dovecot-testing",
+  "version": "0.0.1",
+  "description": "imap testing using dovecot",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cozy/dovecot-testing.git"
+  },
+  "main": "index.js",
+  "bin": {
+    "dovecot-testing": "cli.js"
+  },
+  "scripts": {
+    "prepublish": "coffee --bare --no-header --compile ."
+  },
+  "dependencies": {
+    "imap": "0.8.13",
+    "iconv-lite": "0.4.4",
+    "commander": "^2.3.0"
+  }
+}
