@@ -1,6 +1,6 @@
 {
   "name": "dovecot-testing",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "imap testing using dovecot",
   "license": "MIT",
   "repository": {
