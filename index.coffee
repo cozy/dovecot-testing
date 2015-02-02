@@ -59,7 +59,7 @@ DovecotTesting.changeSentUIDValidity = (done) ->
     cmd = 'sudo /bin/bash /resources/Scripts/Uidvaliditychange.sh'
 
     if RUN_IN_VAGRANT
-        cmd = 'cd #{__dirname}/vagrant && vagrant ssh --command "' + cmd + '"'
+        cmd = "cd #{__dirname}/vagrant && vagrant ssh --command \"#{cmd}\""
 
     run cmd, (err) ->
         if err
@@ -106,7 +106,7 @@ DovecotTesting.forcedCleanState = (done) ->
     """
 
     if RUN_IN_VAGRANT
-        cmd = 'cd #{__dirname}/vagrant && vagrant ssh --command "' + cmd + '"'
+        cmd = "cd #{__dirname}/vagrant && vagrant ssh --command \"#{cmd}\""
 
     run cmd, (err) ->
         if err then return done new Error('cant rimraf')
