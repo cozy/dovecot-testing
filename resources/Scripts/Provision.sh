@@ -40,7 +40,7 @@ echo 'Provisioning Environment with Dovecot and Test Messages'
   echo 'Refreshing the test mailbox.'
 
   sudo stop dovecot
-  [ -d "/home/testuser/Maildir" ] && sudo rm -R /home/testuser/Maildir
+  [ -d "/home/testuser/Maildir" ] && sudo rm -rf /home/testuser/Maildir
   sudo cp -Rp /resources/Maildir /home/testuser/
   sudo chown -R testuser:testuser /home/testuser/Maildir
   sudo start dovecot
