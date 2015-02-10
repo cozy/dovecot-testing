@@ -107,7 +107,8 @@ DovecotTesting.forcedCleanState = (done) ->
     """
 
     if RUN_IN_VAGRANT
-        cmd = "cd #{__dirname}/vagrant && vagrant ssh --command \"#{cmd}\""
+        cmd = "cd #{__dirname}/vagrant && " +
+            " vagrant ssh --command \"sudo rm -rf /home/testuser/Maildir/\""
 
     run cmd, (err) ->
         if err then return done new Error('cant rimraf')
