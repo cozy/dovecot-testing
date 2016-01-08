@@ -45,7 +45,7 @@ DovecotTesting.serverIP = ->
     if RUN_IN_VAGRANT then '172.31.1.2' else '127.0.0.1'
 
 DovecotTesting.isVagrantUp = (done) ->
-    exec 'vagrant status'
+    exec "cd #{__dirname}/vagrant && vagrant status"
     , (err, stdout, stderr) ->
         if err and err.code is 127
             return done new Error('you need to install vagrant')
@@ -56,10 +56,11 @@ DovecotTesting.isVagrantUp = (done) ->
             return done null, ~stdout.indexOf 'running'
 
 DovecotTesting.changeSentUIDValidity = (done) ->
+    @timeout? 300000
     cmd = 'sudo /bin/bash /resources/Scripts/Uidvaliditychange.sh'
 
     if RUN_IN_VAGRANT
-        cmd = 'cd #{__dirname}/vagrant && vagrant ssh --command "' + cmd + '"'
+        cmd = "cd #{__dirname}/vagrant && vagrant ssh --command \"#{cmd}\""
 
     run cmd, (err) ->
         if err
@@ -106,7 +107,7 @@ DovecotTesting.forcedCleanState = (done) ->
     """
 
     if RUN_IN_VAGRANT
-        cmd = 'cd #{__dirname}/vagrant && vagrant ssh --command "' + cmd + '"'
+        cmd = "cd #{__dirname}/vagrant && vagrant ssh --command \"#{cmd}\""
 
     run cmd, (err) ->
         if err then return done new Error('cant rimraf')
@@ -135,3 +136,4 @@ unless module.parent
 
     DovecotTesting.setupEnvironment ->
         console.log "ALL SET, IN VAGRANT =", RUN_IN_VAGRANT
+
